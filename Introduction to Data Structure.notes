@@ -1,0 +1,34 @@
+-----------------------------------------------------------
+    Introduction to Data Strcuture
+-----------------------------------------------------------
+
+Data Structure:
+
+	A way to efficiently store and organize data so that it could be efficiently used
+
+	Two Views of DS:
+
+	1.
+	--> Abstract(ADT): Mathmatical(Logical) Models 
+
+		!!No Implemetaion!!, just an Abstract idea
+		
+		Example: --> List : Store Information, Read Element by Position, Modify Elements at Position
+				 --> Implemented Using Arrays in most langauges
+
+	2.
+	--> Implementation: The actual data structure in used
+
+
+Study Plan:
+
+	1. Abstract Concept
+	2. Operations
+	3. Cost of Operations
+	4. Costs
+
+
+
+
+
+

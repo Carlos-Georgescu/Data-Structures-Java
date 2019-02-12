@@ -1,7 +1,5 @@
 /*
-	Java Syntax Cheat Sheet #One
-	ArrayList
-	at it's core, ararylist is 
+	At it's core, ararylist is 
 */
 
 ArrayList name = new ArrayList();

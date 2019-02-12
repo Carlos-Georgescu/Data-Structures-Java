@@ -13,5 +13,4 @@ Which resembles an actual queue in real life
 
 Queue<Type> name = new LinkedList<>();
 
-
 name.add(); //add to the head of the queue 
