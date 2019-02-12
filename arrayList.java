@@ -4,7 +4,9 @@
 	at it's core, ararylist is 
 */
 
-ArrayList<Type> name = new ArrayList<Type>();//initialization with add
+ArrayList name = new ArrayList();
+
+ArrayList<Type> name = new ArrayList<Type>();//initialization and restrict the type of content
 
 Character, String, Map, Character, Integer, Boolean//available types
 
@@ -50,9 +52,9 @@ name.lastIndexOf(^);//return the last element
 
 //UPDATE RELATED FUNCTIONS
 
-name.remove(int index)//delete at element
+name.remove(int index);//delete at element
 
-name.set(int index, Object element)//same as put for hashmap
+name.set(int index, Object element);//same as put for hashmap
 
 /*
 
@@ -60,3 +62,6 @@ There are still some functions not included here, refer to JDK for
 indepth discussion of all available functions
 
 */
+
+name.toString();//inherited method, conver the arraylist to a single string
+
