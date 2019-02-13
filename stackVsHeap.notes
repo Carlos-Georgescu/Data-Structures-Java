@@ -1,0 +1,29 @@
+-----------------------------------------------------------
+    OOP + Java Memory Storage Review
+-----------------------------------------------------------
+
+!!Bottom Line !! ==> #The objects are created in the heap and the primitive variables are storaged in the stack#
+
+Stack:
+	--> In control of #Method Invocation#
+	--> Like the name suggests the stack start with Main();
+
+	--> whenever a method is called, the method's frame is pushed to the top of the stack
+		[java]
+			class example{//this class is in need of instruction in the form of main
+				public static void main(String args[]){
+					activateFunction();//new frame is poped to the top of the stack
+				}
+			}
+		[java]
+
+	--> Any variable created in the main is #Local# to the main,
+		any varabile created in activateFunction is #local# to that function unless specified
+
+Heap:
+
+	--> Instance of a class(aka. Objects), instance variable of of instance of a class resides in the heap
+	--> The Stack contains their memory address in the heap
+	--> which is why java is "pass by reference by value"
+	--> when a varaible is re-assigned, the #Garbage collection# mechanism comes and remove the heap variable
+		with no address

@@ -1,0 +1,58 @@
+-----------------------------------------------------------
+    List as an Abstract Data Type
+-----------------------------------------------------------
+
+List Functions:
+
+1. Store a given data-entry with given-data type 
+2. Write and modify said data at position
+3. Modify at position
+
+
+First we have #Arrays#
+
+Array Restrction:
+	1. Fixed Size
+	2. No Insert
+	3. Can't remove at index - can't shrink
+
+
+-----------------------------------------------------------
+    Compare/Contrast Linked List with Array
+-----------------------------------------------------------
+
+Due to the high cost of operation, it is very inefficient to implement an dynamic list that solves 
+these problems using just array and copying the block over
+
+In order to better understand these data structures, we must first have a solid understanding of how 
+varaibles are stored within a computer
+
+During the initialization of a variable, a #value# and #memory address# is assigned
+
+Array allocated a fixed block of memory to be filled up
+
+linked list takes a different approach, storing three pieces of information
+	1. address of current node
+	2. value of current node
+	3. address of next node
+
+
+These two basic lists have different !Cost of Operation! as a result
+
+Let's Examing Them
+
+1. Memory Allocation: In order to implement a dynamic expandable list, array must allocate a huge 
+   chunk whereas linked list does not have to allocate extra memory
+
+2. .add 
+	--> O(n) for array on average, it gets more and more efficient towards the end(most efficient towards the end)
+    --> O(n) for linked list on average, gets more and more in-efficient at the 
+
+3. access element
+	--> O(1) for array at any time
+	--> O(n) is the average case in linked list, must traverse through all previous elements to get to this one
+
+-----------------------------------------------------------
+    How is ArrayList implemented in Java?
+-----------------------------------------------------------
+

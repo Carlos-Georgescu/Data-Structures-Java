@@ -1,5 +1,5 @@
 /*
-	At it's core, ararylist is 
+	Refer to ListAbstraction for more details
 */
 
 ArrayList name = new ArrayList();

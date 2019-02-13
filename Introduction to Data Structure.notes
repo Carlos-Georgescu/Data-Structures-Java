@@ -25,10 +25,13 @@ Study Plan:
 	1. Abstract Concept
 	2. Operations
 	3. Cost of Operations
-	4. Costs
+	4. Implementation
 
 
+!!!Java is PASS BY VALUE WITH NO EXCEPTION !!! 
 
+When you pass by a value - you use the reference of the variable to receive the value, 
+no functional in general should modify a variable unless it is global
 
 
 
