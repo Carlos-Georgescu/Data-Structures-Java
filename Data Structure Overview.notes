@@ -2,4 +2,17 @@
   	Data Structure Implementation in Java Overview
 -----------------------------------------------------------
 
-	
+Root: Collection --> List, Set, Queue, Map
+
+	List: ArrayList(Dynamic Array), LinkedList, Stack?
+
+	Set: SortedSet, HashSet, TreeSet, LinkedHashSet
+
+	Map: SortedMap, HashMap, TreeMap, LinkedHashMap
+
+Tree/Graphs can be implemented using these Java
+
+DS I am current familiar with: ArrayList, LinkedList, HashMap, HashSet
+
+Need to learn: Binary Search Tree, Trie
+

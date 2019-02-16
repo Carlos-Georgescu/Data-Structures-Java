@@ -63,3 +63,4 @@ indepth discussion of all available functions
 
 name.toString();//inherited method, conver the arraylist to a single string
 
+Arrays.List(Primitive[]) // Converts the primitive array into a collection
