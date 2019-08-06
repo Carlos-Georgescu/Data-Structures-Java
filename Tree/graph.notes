@@ -1,0 +1,32 @@
+-----------------------------------------------------------
+    Graph Data Structure
+-----------------------------------------------------------
+
+Linear vs. Hierachical Data Structure
+
+Logical Mode:
+	--> collection of entity 
+	--> Graph: A graph is #an ordered pair# of set V of vertices
+	--> As well as a set E of edges
+
+	--> Name all node arbitarily
+	--> how to represent an edge?
+	--> Directed Edge vs Un-Directed Edge
+
+Directed Edge: Is One Way, ordered pair
+Un-Directed Edge: Both way, unordered pair
+
+Directed Graph is called Digraph
+
+There are a lot of standard graph problems/algorithms for traversal
+
+You can represent an Un-Directed graph with Digraph
+
+Weights: You can assign custom value of each edge to make weighted graph
+
+--> All graph are basically weighted -> unweighted graph(edge value of one)
+
+-----------------------------------------------------------
+    More Properties of Graphs
+-----------------------------------------------------------
+
