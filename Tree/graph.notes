@@ -11,6 +11,7 @@ Logical Mode:
 
 	--> Name all node arbitarily
 	--> how to represent an edge?
+
 	--> Directed Edge vs Un-Directed Edge
 
 Directed Edge: Is One Way, ordered pair
@@ -29,4 +30,41 @@ Weights: You can assign custom value of each edge to make weighted graph
 -----------------------------------------------------------
     More Properties of Graphs
 -----------------------------------------------------------
+
+Self Loop and Multi edge are ways we can construct the edges of a graph
+
+- why multi edge? it can be used to represent different weights
+
+Question: Compute the maximum direct/ Un-Directed edges 
+
+Dense Graphs: Lots of edges - stored using adjacency matrix
+
+Sparce Graphs: Few edges - stored using adjaceny list
+
+Path: a sequence of vertices 
+
+Simple Path: no repeated vertices or edges
+
+Trail: Edge can be repeats but no vertices can be repeated
+
+Closed Walk: Start and end on the same vertices
+
+Simple Cycle: NO repetition other then start and end
+
+Connected/Strongly Connected: You can reach any node from any node 
+
+Weakly Connected: You cant
+
+Acyclic Graph: No simple cycle allowed
+				- > you can have directed(#Tree#) or Un-Directed graphs
+
+-----------------------------------------------------------
+    Implementation
+-----------------------------------------------------------
+
+
+
+
+
+
 

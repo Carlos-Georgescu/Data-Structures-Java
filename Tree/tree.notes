@@ -1,0 +1,36 @@
+-----------------------------------------------------------
+    Introduction to Tree Data Structure
+-----------------------------------------------------------
+
+Once again, tree is a hiearchical data structure
+
+Root: the beginning/first node of the tree
+
+All nodes can have #Children Nodes# which are linked to a parent node
+
+Sibling: nodes that share the same parent
+
+Leaf Node: No children
+
+Tree is a recursive data structure
+
+For every N nodes, there are N-1 edges
+
+Depth: The numbder of edges from root to X
+
+Height: Number of edges in longest path from x to leaf 
+
+-----------------------------------------------------------
+    Binary Tree
+-----------------------------------------------------------
+
+Binary Tree: Every single tree with two children nodes
+
+
+
+
+
+
+
+
+
