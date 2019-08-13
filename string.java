@@ -13,3 +13,7 @@ name.toLowerCase();
 
 name.toUpperCase();//very self explanatory
 
+name.substring(beginning , end)
+
+
+
