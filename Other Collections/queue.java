@@ -7,8 +7,6 @@ Queue is a first in first out data structure, meaning that the elements first ad
 
 Which resembles an actual queue in real life
 
-
-
 */
 
 Queue<Type> name = new LinkedList<>();
