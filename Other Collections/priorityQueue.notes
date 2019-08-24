@@ -1,0 +1,29 @@
+-----------------------------------------------------------
+				Priority Queue Notes						
+-----------------------------------------------------------
+
+Priority Queue(Abstract Data Type):
+
+	- add a priority ranking to the current queue system
+	- There are several way to implement the priority queue
+	- Using Unsorted Array means that either enqueue and dequeue is going to be slow
+	- if sorted, Log(n) is the insertion speed
+	- using linkedlist means the insertion and remove is fast
+	- sorted linkedlist can do this to 
+
+	- Heap(standard way of doing this?)
+
+Heap:
+	- the root index is one 
+	- every index has a parent index and two children index
+	- parent is i/2
+	- children are i*2 and i*2 + 1
+	- keep swapping up with your parent until you finish
+	- when you jump, it's log(n) for insertion, so it's not that slow
+	- for deletion, grab last element and move it up to the start and bubble it down'
+
+-----------------------------------------------------------
+    				More On Heaps
+-----------------------------------------------------------
+
+	

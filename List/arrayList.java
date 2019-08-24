@@ -1,4 +1,4 @@
-[java]{
+[java] {
 
 /*
 	Refer to ListAbstraction for more details
