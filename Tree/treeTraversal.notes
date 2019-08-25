@@ -1,0 +1,68 @@
+-----------------------------------------------------------
+    Binary Tree Traversal
+-----------------------------------------------------------
+
+Breadth First Search:
+	- Traversing a tree in level by level, pretty easy to understand
+
+Depth First Search:
+	1. Pre-Order
+	2. In-Order
+	3. Post-Order
+
+	Pre-Order:
+		--> Going (Add)(Left)(Right)
+	In-Order: 
+		--> Going (Left)(Add)(Right)
+	Post-Order: 
+		--> Going (Left)(Right)(Add)
+
+	The recursive solution to this problem is very simple
+
+
+[java]{
+
+	class BinaryTreeNode{
+		int val;
+		BinaryTreeNode left, right
+
+		BinaryTreeNode(int x) {
+			val = x;
+		} 
+	}
+
+	class Solution {
+	   public List<Integer> preorderTraversal(TreeNode root) {
+			List<Integer> pre = new LinkedList<Integer>();
+			if(root==null) return pre;
+			pre.add(root.val);
+			pre.addAll(preorderTraversal(root.left));
+			pre.addAll(preorderTraversal(root.right));
+			return pre;
+		}
+	}
+
+	class Solution {
+		public List<Integer> inorderTraversal(TreeNode root) {
+		       	List<Integer> pre = new LinkedList<Integer>();
+				if(root==null) return pre;
+				pre.addAll(inorderTraversal(root.left));
+		        pre.add(root.val);
+				pre.addAll(inorderTraversal(root.right));
+				return pre;
+		}
+	}
+
+	class Solution {
+	    public List<Integer> postorderTraversal(TreeNode root) {
+	        List<Integer> pre = new LinkedList<Integer>();
+			if(root==null) return pre;
+			pre.addAll(postorderTraversal(root.left));
+			pre.addAll(postorderTraversal(root.right));
+	        pre.add(root.val);
+			return pre;
+	    }
+	}
+
+
+	}[java]
