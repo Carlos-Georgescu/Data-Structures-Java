@@ -1,0 +1,95 @@
+-----------------------------------------------------------
+    Introduction to Sorting Algorithms
+-----------------------------------------------------------
+
+Sorting: Arranging the elements in a collection in an order of some property
+
+Classification:
+	1. Time Complexity
+	2. Space Complexity
+	3. Stability
+		-> preserve related order of elements
+
+Internal vs External Sort:
+	ram		 disk
+
+Recursive or Not-Recursive:
+
+Selection Sort:
+
+Linear scan for the lowest, then add to a new array which is sorted, or swapp with the curr at currenct pass
+Time Complexity -> n^2
+Space Complexity -> n or if you make swaps, which gives n^2  
+
+
+Bubble Sort:
+
+Bubble up the current largest element
+
+also n^2
+
+Insertion Sort:
+
+essentional, you bubble downwards using a while loop
+
+
+[java]{
+	public class Main {
+	    public static void main(String[] args) {
+	        int[] arr = {1,2,5,3,2,5,6,5,5,3,1,8,9};
+	        selectionSort(arr);
+	        for(int curr : arr){
+	            System.out.print(curr);
+	        }
+	    }
+	    
+	    public static void bubbleSort(int[] arr){
+	        for(int i = 0; i<arr.length-1; i++){
+	            for(int j = 0; j<arr.length-1; j++){
+	                if(arr[j]>arr[j+1]){
+	                    int placeHolder = arr[j];
+	                    arr[j] = arr[j+1];
+	                    arr[j+1] = placeHolder;
+	                }
+	            }
+	        }
+	    }
+	    
+	     public static void selectionSort(int[] arr){
+		        for(int i = 0; i<arr.length-2; i++){
+		            
+		            int min = i;
+		            
+		            for(int j = i; j<arr.length; j++){
+		                if(arr[j] < arr[min]){
+		                    min = j;
+		                }
+		            }
+		            
+		            int holderCurr = arr[i];
+		            arr[i] = arr[min];
+		            arr[min] = holderCurr;
+		        }
+		}
+
+		public static void insertionSort(int[] arr){
+	        for(int i = 1; i<arr.length-1; i++){
+	            int value = arr[i];
+	            int j = i;
+	            while(j > 0 && arr[j-1] > value){
+	                int placeholder = arr[j];
+	                arr[j] = arr[j-1] ;
+	                arr[j-1] = placeholder;
+	                j--;
+	            }
+	        }
+	    }
+    
+	    
+	}
+}[java]
+
+
+
+
+
