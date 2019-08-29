@@ -24,4 +24,14 @@ Default Params: 16, 0.75F(as in 75 percent full)
 	name.clear;
 
 	name.size;
-}
+
+	//How do one iterated through a hashmap
+
+	HashMap<String, Integer> map = new HashMap<Character, Integer>();
+
+	for(Map.Entry element: map.entrySet()){
+		String key = (String)mapElement.getKey();
+		int val = (int)mapElement.getValue();
+	}
+	
+}[java]

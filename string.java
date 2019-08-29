@@ -54,5 +54,5 @@
 }
 
 
-
-
+//the cost of operation for trimming a string
+//what the fuck is regex and how do you split string?

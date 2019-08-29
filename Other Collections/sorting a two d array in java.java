@@ -21,6 +21,8 @@ public class Main {
                 return Double.compare(a[which ever index you want to sort by], b[whichever]);
             }
         });
+
+        Arrays.sort(twoD, (p1, p2) -> p1[0] - p2[0]); //a simplification of comparator syntax
         
         for(int[] oneD : twoD){
             System.out.print(oneD[0]);
