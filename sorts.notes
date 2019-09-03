@@ -21,16 +21,27 @@ Linear scan for the lowest, then add to a new array which is sorted, or swapp wi
 Time Complexity -> n^2
 Space Complexity -> n or if you make swaps, which gives n^2  
 
+always n squared since need to find min in each iteration anyway
 
 Bubble Sort:
 
 Bubble up the current largest element
 
-also n^2
+always n^2
 
 Insertion Sort:
 
 essentional, you bubble downwards using a while loop
+
+bestcase -> n
+
+fastest since in best case it's n, however, still n^2 in worst case(reverse sored array)
+
+Merge Sort:
+  
+
+Quick Sort:
+
 
 
 [java]{
@@ -56,7 +67,7 @@ essentional, you bubble downwards using a while loop
 	    }
 	    
 	     public static void selectionSort(int[] arr){
-		        for(int i = 0; i<arr.length-2; i++){
+		        for(int i = 0; i<arr.length-1; i++){
 		            
 		            int min = i;
 		            
@@ -84,7 +95,54 @@ essentional, you bubble downwards using a while loop
 	            }
 	        }
 	    }
-    
+    	
+    	public static void merge(int[] arr, int l, int r, int m){
+        
+	        int leftPointer = 0;
+	        int rightPointer = 0;
+	        int k = l;
+	        
+	        int[] left = new int[m-l+1];
+	        int[] right = new int[r-m];
+	        
+	        for(int i = 0; i < left.length; i++){
+	            left[i] = arr[l+i];
+	        }
+	        
+	        for(int i = 0; i< right.length; i++){
+	            right[i] = arr[m+1+i];
+	        }
+	        
+	        while( k < r+1 ){
+	           if(leftPointer == left.length && rightPointer <= right.length){
+	                 arr[k] = right[rightPointer];
+	                 rightPointer++;
+	            }
+	            else if(rightPointer == right.length && leftPointer < left.length){
+	                arr[k] = left[leftPointer];
+	                leftPointer++;
+	            }
+	            else if(left[leftPointer] < right[rightPointer]){
+	                arr[k] = left[leftPointer];
+	                leftPointer++;
+	            } else {
+	                arr[k] = right[rightPointer];
+	                rightPointer++;
+	            } 
+	            k++;
+	        }
+	        
+	        
+	    }
+	    
+	    public static void mergeSort(int[] arr, int l, int r){
+	        if(l<r){
+	            int mid = (l+r)/2;
+	            mergeSort(arr, l, mid);
+	            mergeSort(arr, mid+1, r);
+	            merge(arr, l, r, mid);
+	        }
+	    }
 	    
 	}
 }[java]

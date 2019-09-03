@@ -61,8 +61,48 @@ Acyclic Graph: No simple cycle allowed
 -----------------------------------------------------------
     				Implementation
 -----------------------------------------------------------
+Vertex List:
 
- 
+	This is a must have for vertex name / representation index look up
+
+Edge List Implementation:
+
+	This is the worst case representation, which each edge being represented a row
+	->Time Complexity of looking up a node's all connections
+		-> O(number of edges(v^2))
+	->Time Complexity of looking up whether two nodes are connected
+		-> O(number of edges(v^2))
+
+Adjaceny List:
+
+	Represent the vertex using a hashtable, add edges as linkedlist as needed
+	->hashtable backed linkedlist, each key is either an index or the actual string name
+	->each value is a node representing a weight(if weighted) and a string(name of the connected node)
+	->Time Complexity of looking up a node's all connections
+		-> O(number of connections)
+	->Time Complexity of looking up whether two nodes are connected
+		-> O(number of connections) worst case
+		-> O(1) best case
+			it's different for directed vs un-directed graphs
+
+Adjaceny Matrix:
+
+	The adjaceny matrix method use a lot of space
+	we create a v by v matrix
+	fill it up with zero
+	if there is a connection between the two nodes, change the 0 to 1
+	if there is weights, use infinity and weight
+	if it's non directed, you change one thing at a time, or both if un-directed
+
+	->Time Complexity of looking up a node's all connections
+		-> O(number of connections) -> this can be very very slow
+	->Time Complexity of looking up whether two nodes are connected
+		-> O(1)
+
+	Space is V^2, this is very large
+
+!For a Dense Graph, use adjaceny matrix, for a Sparse Graph, use adjaceny list
+	
 
 
 
