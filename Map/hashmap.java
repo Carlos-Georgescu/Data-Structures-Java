@@ -30,8 +30,8 @@ Default Params: 16, 0.75F(as in 75 percent full)
 	HashMap<String, Integer> map = new HashMap<Character, Integer>();
 
 	for(Map.Entry element: map.entrySet()){
-		String key = (String)mapElement.getKey();
-		int val = (int)mapElement.getValue();
+		String key = (String)element.getKey();
+		int val = (int)element.getValue();
 	}
 	
 }[java]

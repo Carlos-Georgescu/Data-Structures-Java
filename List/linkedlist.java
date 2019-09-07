@@ -27,6 +27,7 @@ You must visit nodes one by one
 	name.next(); //give you the address of the next node
 
 	name.val;//accessing the value of the linked list
+	
 } [java]
 
 !Cost of Operation!

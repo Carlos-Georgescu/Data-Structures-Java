@@ -16,3 +16,4 @@ Arrays.sort(name);//this is pass by reference for some reason
 
 Arrays.sort(name, start, end);//this sorts only a given section of the array
 
+Arrays.toString(name);//for printing out the entire array 
