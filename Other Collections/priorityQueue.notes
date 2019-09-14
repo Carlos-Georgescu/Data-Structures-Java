@@ -27,8 +27,27 @@ Heap:
 -----------------------------------------------------------
 
 
+
 -----------------------------------------------------------
     			Using a Priority Queue
 -----------------------------------------------------------
 
 Comparator Class
+
+//must be comparable objects
+
+[java]{
+
+	PriorityQueue<Type> pqueue = new PriorityQueue<String>();
+
+	pqueue.add();
+
+	pqueue.poll();//taking the first object off
+
+	pqueue.peek();//take a look at the first 
+
+	pqueue.remove();//worse version of null
+
+	pqueue.offer();
+
+}[java]

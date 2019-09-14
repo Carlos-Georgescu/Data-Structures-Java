@@ -10,7 +10,9 @@
 
 */
 
-[java]{
+[java]
+
+{
 
 	String name = "Value";
 
